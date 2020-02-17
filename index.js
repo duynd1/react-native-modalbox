@@ -252,12 +252,12 @@ export default class ModalBox extends React.PureComponent {
             this.state.containerHeight - this.state.keyboardOffset,
             this.state.containerWidth
           );
-          if (
-            this.state.keyboardOffset &&
-            positionDest < this.props.keyboardTopOffset
-          ) {
-            positionDest = this.props.keyboardTopOffset;
-          }
+          // if (
+          //   this.state.keyboardOffset &&
+          //   positionDest < this.props.keyboardTopOffset
+          // ) {
+          //   positionDest = this.props.keyboardTopOffset;
+          // }
           let animOpen = Animated.timing(this.state.position, {
             toValue: positionDest,
             duration: this.props.animationDuration,
