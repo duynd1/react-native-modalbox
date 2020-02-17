@@ -336,7 +336,7 @@ export default class ModalBox extends React.PureComponent {
       position = containerHeight / 2 - this.state.height / 2;
     }
     // Checking if the position >= 0
-    if (position < 0) position = 0;
+    // if (position < 0) position = 0;
     return position;
   }
 
